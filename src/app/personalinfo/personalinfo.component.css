@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1098px;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-color: #f9f9f9;
+
+}
+
+ .img1 {
+    position: relative;
+    margin-left: 44px;
+    margin-top: 46.5px;
+}
+
+.img1b {
+    position: absolute;
+    margin: 35px 30px;
+} 
+
+.persInfo {
+    position: absolute;
+    width: 179px;
+    height: 29px;
+    left: 149px;
+    top: 47px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
+
+.bottomBorder {
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 150px;
+    top: 88px;
+    
+    /* off black */
+    
+    border: 1px solid #1A1A1A;
+}
+
+.pagesCounter {
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    left: 920px;
+    top: 49px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
+
+.inputsContainer {
+    /* border: 1px solid red; */
+    width: 846px;
+    height: 65vh;
+    margin: 157px 958px 265px 126px;
+
+    /* display: flex; */
+}
+
+.inputsContainer label {
+    width: 798px;
+height: 21px;
+
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+
+
+
+.nameInput1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 122px;
+    left: calc(50% - 419px/2 - 624.5px);
+    top: 157px;
+    
+}
+
+.lastnameInp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 122px;
+    left: calc(50% - 419px/2 - 197.5px);
+    top: 157px;
+    
+}
+
+.uploadimg {
+    position: absolute;
+    width: 232px;
+    height: 22px;
+    margin-top: -220px;
+    margin-left: -130px;
+
+
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #1A1A1A;
+}
+
+.persImgUpl {
+    position: absolute;
+    width: 232px;
+    height: 22px;
+    left: 150px;
+    top: 325px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    /* off black */
+    
+    color: #1A1A1A;
+    
+}
+
+.persImgTxt {
+    width: 69px;
+    height: 17px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+
+.txtarea {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 8px 24px;
+     gap: 8px;
+     
+     position: absolute;
+     width: 846px;
+     height: 148px;
+     left: calc(50% - 846px/2 - 411px);
+     top: 393px;
+    
+}
+
+.txtarea ::placeholder {
+    padding: 16px 13px;
+}
+
+.mailInp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 122px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 558px;
+    
+}
+.mailInp input {
+    box-sizing: border-box;
+
+    width: 798px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    padding: 16px 13px;
+}
+
+.mailInp label {
+    width: 798px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.mailInp p {
+    width: 798px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* შავი/500 */
+    
+    color: #2E2E2E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+
+
+
+
+
+.mobileNumb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 122px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 693px;
+}
+
+.mobileNumb label {
+    width: 798px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mobileNumb input {
+    box-sizing: border-box;
+
+    width: 798px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    padding: 16px 13px;
+}
+
+.mobileNumb p {
+    width: 798px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* შავი/500 */
+    
+    color: #2E2E2E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.nameInput {
+    box-sizing: border-box;
+
+    width: 371px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    padding: 16px 13px;
+}
+
+.lastnameInput {
+    box-sizing: border-box;
+
+    width: 371px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    padding: 16px 13px;
+}
+
+
+.imgUpload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 12px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 107px;
+    height: 27px;
+    left: 401px;
+    top: 325px;
+    
+    background: #0E80BF;
+    border-radius: 4px;
+}
+
+.nextBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 34px;
+    gap: 20px;
+    
+    position: absolute;
+    width: 151px;
+    height: 48px;
+    right: 972px;
+    bottom: 65px;
+    
+    background: #6B40E3;
+    border-radius: 4px;
+}
+
+.nextBtnspan {
+    width: 81px;
+    height: 20px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    letter-spacing: 0.08em;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Blank{
+    position: absolute;
+    width: 822px;
+    height: 1080px;
+    right: 0px;
+    top: 0px;
+    
+    background: #FFFFFF;
+}
+
+.logoImg {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 78px;
+    top: 994px;
+}
