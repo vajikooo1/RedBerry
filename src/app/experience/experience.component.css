@@ -173,6 +173,8 @@
     height: 125px;
     left: calc(50% - 846px/2 - 411px);
     top: 294px;
+
+    
     
 }
 
@@ -208,6 +210,7 @@
     background: #FFFFFF;
     border: 1px solid #BCBCBC;
     border-radius: 4px;
+    padding-left: 16px;
     
     /* Inside auto layout */
     
@@ -226,6 +229,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
+    
     /* identical to box height, or 150% */
     
     display: flex;
@@ -301,6 +305,7 @@
     background: #FFFFFF;
     border: 1px solid #BCBCBC;
     border-radius: 4px;
+    padding-left: 16px;
     
     /* Inside auto layout */
     
@@ -366,6 +371,7 @@
     background: #FFFFFF;
     border: 1px solid #BCBCBC;
     border-radius: 4px;
+    padding-left: 16px;
     
     /* Inside auto layout */
     
@@ -423,6 +429,7 @@
     background: #FFFFFF;
     border: 1px solid #BCBCBC;
     border-radius: 4px;
+    padding: 16px 13px;
     
     /* Inside auto layout */
     
