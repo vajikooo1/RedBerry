@@ -59,6 +59,8 @@
     
     background: #1A1A1A;
     border-radius: 8px;
+    
+    cursor: pointer;
 
 }
 .txt {
@@ -79,6 +81,8 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    cursor: pointer;
 }
 .line {
     position: absolute;

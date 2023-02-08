@@ -15,11 +15,13 @@
     position: relative;
     margin-left: 44px;
     margin-top: 46.5px;
+    cursor: pointer;
 }
 
 .img1b {
     position: absolute;
     margin: 35px 30px;
+    cursor: pointer;
 } 
 
 .persInfo {
@@ -308,12 +310,6 @@ flex-grow: 0;
     flex-grow: 0;
 }
 
-
-
-
-
-
-
 .mobileNumb {
     display: flex;
     flex-direction: column;
@@ -461,6 +457,8 @@ flex-grow: 0;
     
     background: #6B40E3;
     border-radius: 4px;
+
+    cursor: pointer;
 }
 
 .nextBtnspan {
@@ -484,6 +482,8 @@ flex-grow: 0;
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    cursor: pointer;
 }
 
 .Blank{
@@ -502,4 +502,43 @@ flex-grow: 0;
     height: 42px;
     left: 78px;
     top: 994px;
+}
+
+
+/* ---------------------- */
+
+.name {
+    position: absolute;
+    width: 123px;
+    height: 42px;
+    left: 80px;
+    top: 68px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    /* identical to box height */
+    
+    
+    color: #F93B1D;
+}
+
+.lastname {
+    position: absolute;
+    width: 145px;
+    height: 42px;
+    left: 223px;
+    top: 68px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    /* identical to box height */
+    
+    
+    color: #F93B1D;
 }
