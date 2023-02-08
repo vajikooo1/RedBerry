@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PersonalinfoComponent } from './personalinfo/personalinfo.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
 
 const routes: Routes = [
 //   {
@@ -43,7 +44,8 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     PersonalinfoComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

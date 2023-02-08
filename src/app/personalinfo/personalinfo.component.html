@@ -1,16 +1,17 @@
 
     <div class="container">
-         <img routerLink="/" class="img1b" src="assets/1.png" alt="#">
-        <img routerLink="/" class="img1" src="assets/Vector.png" alt="#"> 
-        <p class="persInfo">პირადი ინფო</p>
-        <div class="bottomBorder"></div>
-        <div class="pagesCounter">1/3</div>
+          <img routerLink="/" class="img1b" src="assets/1.png" alt="#">
+          <img routerLink="/" class="img1" src="assets/Vector.png" alt="#"> 
+          <p class="persInfo">პირადი ინფო</p>
+          <div class="bottomBorder"></div>
+          <div class="pagesCounter">1/3</div>
         <div class="inputsContainer">
 
             <div class="nameInput1">
                  <label for="nameInput">სახელი</label>
                  <input class="nameInput" type="name" placeholder="ანზორ" [(ngModel)]="userName">
                  <p>მინიმუმ 2 ასო, ქართული ასოები</p>
+                 
                 </div>
 
 
@@ -23,7 +24,8 @@
 
          <div class="uploadimg">
             <h2 class="persImgUpl"> პირადი ფოტოს ატვირთვა</h2>
-            <button class="imgUpload"><span class="persImgTxt"> ატვირთვა </span></button>
+            <input class="imgUpload" (change)="handleUpload($event)" type="file" name="image" id="#">
+            <!-- <button class="imgUpload"><span class="persImgTxt"> ატვირთვა </span></button> -->
          </div>
 
 
@@ -34,13 +36,13 @@
           
         <div class="mailInp">
             <label for="email">ელ.ფოსტა</label>
-            <input class="emailinp" type="email" placeholder="anzorr666@redberry.ge">
+            <input class="emailinp" type="email" placeholder="anzorr666@redberry.ge" [(ngModel)]="email">
             <p>უნდა მთავრდებოდეს @redberry.ge-თი</p>
         </div>   
 
         <div class="mobileNumb">
             <label for="phoneNumber">მობილურის ნომერი</label>
-            <input type="phoneNumber" placeholder="+995 551 12 34 56">
+            <input type="phoneNumber" placeholder="+995 551 12 34 56" [(ngModel)]="phonenumber">
             <p>უნდა აკმაყოფილებდეს ქართული მობილური ნომრის ფორმატს</p>
         </div>
 
@@ -50,7 +52,23 @@
 
     <div class="Blank">
     <img class="logoImg" src="assets/2.png" alt="#">
+    
+    
     <p class="name">{{userName}}</p>
+  
+  
     <p class="lastname">{{lastName}}</p>
-    <p>{{Textarea}}</p>
+
+    <p class="email">{{email}}</p>
+
+    <p class="number">{{phonenumber}}</p>
+   
+    
+    <h5 class="textarea">{{Textarea}}</h5>
+   
+   
+    <img class="userImage" [src]="userImage" alt="#">
+
+
+
 </div>

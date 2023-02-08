@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
+experience: any;
+employer: any;
+startDate: any;
+endDate: any;
+txtArea: any;
 
 }
 

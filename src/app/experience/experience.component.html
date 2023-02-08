@@ -1,1 +1,68 @@
-<h1>i am experience</h1>
+
+
+<div class="container">
+
+   <img routerLink="/" class="img1b" src="assets/1.png" alt="#">
+   <img routerLink="/" class="img1" src="assets/Vector.png" alt="#"> 
+   <p class="persInfo">გამოცდილება</p>
+   <div class="bottomBorder"></div>
+   <div class="pagesCounter">2/3</div>
+
+  <div class="inputsContainer">
+
+      <div class="experience">
+          <label for="text">გამოცდილება</label>
+          <input type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." [(ngModel)]="experience">
+          <p>მინიმუმ 2 სიმბოლო</p>
+      </div>   
+
+      <div class="employer">
+          <label for="text">დამსაქმებელი</label>
+          <input type="text" placeholder="დამსაქმებელი" [(ngModel)]="employer">
+          <p>მინიმუმ 2 სიმბოლო</p>
+      </div>   
+
+      <div class="startDate">
+          <label for="date">დაწყების რიცხვი</label>
+          <input type="date" placeholder="mm/dd/yy" [(ngModel)]="startDate">
+      </div>
+
+      <div class="endDate">
+          <label for="date">დამთავრების რიცხვი</label>
+          <input type="date" placeholder="mm/dd/yy" [(ngModel)]="endDate">
+      </div>
+
+      <div class="txtarea">
+          <label for="info">აღწერა</label>
+          <textarea class="txtarea2" name="info" id="#" cols="105" rows="6" placeholder="როლი თანამდებობაზე დაზოგადი აღწერა" [(ngModel)]="txtArea"></textarea>
+  </div>
+
+     <div class="borderLine"></div>
+    
+   </div>
+   <button class="expAdd"><span class="expAddSpan">მეტი გამოცდილების დამატება</span></button>
+
+   <button routerLink="/personalInfo" class="prevBtn"><span class="prevBtnspan"> უკან </span></button>
+   <!-- <button routerLink="/experience" class="nextBtn"><span class="nextBtnspan"> შემდეგი </span></button> -->
+
+   <!-----------        CV    --------------->
+   <div class="blank">
+         
+       <img class="logoImg" src="assets/2.png" alt="#">
+       <p class="expCv">{{experience}}</p>
+       <p class="empCv">{{employer}}</p>
+       <p class="startDateCv">{{startDate}}-{{endDate}}</p>
+       <p class="txtAreaCv">{{txtArea}}</p>
+
+
+
+
+
+
+   </div>
+
+   <!-----------        CV    --------------->
+
+
+
+</div>

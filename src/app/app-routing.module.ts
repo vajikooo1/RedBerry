@@ -17,19 +17,29 @@ const routes: Routes = [
   
   },
   {
+    path:'experience',
+    component: ExperienceComponent,
+    
+  },
+
+  {
+    path: 'personalInfo',
+    component: PersonalinfoComponent,
+    pathMatch: "full"
+  },
+
+  {
     path:'**',
     component: HomeComponent,
   
   },
-  {
-    path:'experience',
-    component: ExperienceComponent,
-    
-  }
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+ }

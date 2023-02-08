@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+
 .container {
     width: 1098px;
     height: 100vh;
@@ -127,6 +129,33 @@ flex-grow: 0;
     
 }
 
+.nameInput1 p {
+    width: 371px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* შავი/500 */
+    
+    color: #2E2E2E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0; 
+}
+
 .lastnameInp {
     display: flex;
     flex-direction: column;
@@ -141,6 +170,34 @@ flex-grow: 0;
     top: 157px;
     
 }
+
+.lastnameInp p {
+    width: 371px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* შავი/500 */
+    
+    color: #2E2E2E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
 
 .uploadimg {
     position: absolute;
@@ -223,6 +280,31 @@ flex-grow: 0;
 
 .txtarea ::placeholder {
     padding: 16px 13px;
+}
+
+.txtarea label {
+    width: 798px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .mailInp {
@@ -541,4 +623,77 @@ flex-grow: 0;
     
     
     color: #F93B1D;
+}
+
+.userImage {
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    left: 501px;
+    top: 48px;
+
+    border-radius: 133px;
+}
+
+.email {
+    position: absolute;
+    width: 179px;
+    height: 21px;
+    left: 111px;
+    top: 127px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+    
+}
+
+.number {
+    position: absolute;
+    width: 151px;
+    height: 21px;
+    left: 111px;
+    top: 158px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
+
+.textarea {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    word-wrap: break-word;
+  
+    position: absolute;
+    width: 432px;
+    height: 72px;
+    left: 80px;
+    top: 250px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+    
+    text-transform: lowercase;
+    
+    color: #000000;
+
+}
+
 }
