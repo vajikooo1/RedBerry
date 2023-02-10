@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent {
+  
+  school: any = "";
+  qualityOfEdu: any = "";
+  endDate: any = "";
+  textArea:any = "";
 
 }

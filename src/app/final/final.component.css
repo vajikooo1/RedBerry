@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+.Blank {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 822px;
+    height: 1080px;
+    left: calc(50% - 822px/2);
+    top: 54px;
+   
+    background: #FFFFFF;
+    border: 0.8px solid #000000;
+}
+
+.logoImg {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 78px;
+    top: 994px
+}
+
+.img1 {
+    position: relative;
+    margin-left: 44px;
+    margin-top: 46.5px;
+    cursor: pointer;
+}
+
+.img1b {
+    position: absolute;
+    margin: 35px 30px;
+    cursor: pointer;
+} 
+
+}

@@ -217,6 +217,12 @@ flex-grow: 0;
     color: #1A1A1A;
 }
 
+/* .uploadimg input[type="file"] {
+    
+}
+ */
+
+
 .persImgUpl {
     position: absolute;
     width: 232px;
@@ -260,6 +266,23 @@ flex-grow: 0;
     flex-grow: 0;
 }
 
+.imgUpload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 12px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 107px;
+    height: 27px;
+    left: 401px;
+    top: 325px;
+    
+    background: #0E80BF;
+    border-radius: 4px;
+}
 
 
 
@@ -504,24 +527,6 @@ flex-grow: 0;
     padding: 16px 13px;
 }
 
-
-.imgUpload {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px 12px;
-    gap: 10px;
-    
-    position: absolute;
-    width: 107px;
-    height: 27px;
-    left: 401px;
-    top: 325px;
-    
-    background: #0E80BF;
-    border-radius: 4px;
-}
 
 .nextBtn {
     display: flex;

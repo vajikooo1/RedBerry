@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { PersonalinfoComponent } from './personalinfo/personalinfo.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { FinalComponent } from './final/final.component';
 
 const routes: Routes = [
 //   {
@@ -45,7 +46,8 @@ const routes: Routes = [
     HomeComponent,
     PersonalinfoComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    FinalComponent
   ],
   imports: [
     BrowserModule,

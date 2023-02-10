@@ -162,6 +162,73 @@
         flex-grow: 0;
     }
 
+
+    .educationQuality {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        gap: 8px;
+        
+        position: absolute;
+        width: 419px;
+        height: 125px;
+        left: calc(50% - 419px/2 - 624.5px);
+        top: 294px;
+        
+    }
+
+    .educationQuality label {
+        width: 371px;
+        height: 21px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        /* identical to box height, or 131% */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #000000;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .educationQuality input { 
+        box-sizing: border-box;
+
+        width: 371px;
+        height: 48px;
+        
+        background: #FFFFFF;
+        border: 1px solid #BCBCBC;
+        border-radius: 4px;
+        padding-left: 16px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .dropdownVector {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 340px;
+        
+    }
+
     .endDate {
         display: flex;
         flex-direction: column;
@@ -432,6 +499,85 @@
         top: 994px;
     }
 
+    .school {
+        position: absolute;
+        width: 349px;
+        height: 20px;
+        left: 80px;
+        top: 625px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        
+        
+        /* off black */
+        
+        color: #1A1A1A;
+    }
+    
+    .qualityOfEdu {
+        position: absolute;
+        width: 81px;
+        height: 20px;
+        left: 445px;
+        top: 625px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        
+        
+        /* off black */
+        
+        color: #1A1A1A;
+        
+    }
+
+     .endDate2 {
+        position: absolute;
+        width: 84px;
+        height: 19px;
+        left: 80px;
+        top: 652px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        
+        color: #919191;
+        
+    } 
+
+    .textArea {
+        position: absolute;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        width: 622px;
+        height: 88px;
+        left: 80px;
+        top: 687px;
+        
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+        
+        text-transform: lowercase;
+        
+        color: #000000;
+    }
 
 
 
