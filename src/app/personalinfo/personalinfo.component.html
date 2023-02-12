@@ -24,10 +24,13 @@
 
          <div class="uploadimg">
             <h2 class="persImgUpl"> პირადი ფოტოს ატვირთვა</h2>
+          
             <!-- <label for="imgUpload"> ატვირთვა </label> -->
             <input class="imgUpload" (change)="handleUpload($event)" type="file" name="image" id="#">
+        
             <!-- <button class="imgUpload"><span class="persImgTxt"> ატვირთვა </span></button> -->
-         </div>
+       
+        </div>
 
 
          <div class="txtarea">
@@ -37,7 +40,7 @@
           
         <div class="mailInp">
             <label for="email">ელ.ფოსტა</label>
-            <input class="emailinp" type="email" placeholder="anzorr666@redberry.ge" [(ngModel)]="email">
+            <input class="emailinp" type="email" placeholder="anzorr666@redberry.ge"  [(ngModel)]="email">
             <p>უნდა მთავრდებოდეს @redberry.ge-თი</p>
         </div>   
 
@@ -48,7 +51,7 @@
         </div>
 
         </div>
-        <button routerLink="/experience" class="nextBtn"><span class="nextBtnspan"> შემდეგი </span></button>
+        <button (click)="saveData()" routerLink="/experience" class="nextBtn"><span class="nextBtnspan"> შემდეგი </span></button>
     </div>
 
     <div class="Blank">

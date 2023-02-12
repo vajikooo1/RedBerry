@@ -11,35 +11,11 @@ import { PersonalinfoComponent } from './personalinfo/personalinfo.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { FinalComponent } from './final/final.component';
+import { AdditionalComponent } from './additional/additional.component';
 
 const routes: Routes = [
-//   {
-//   path:'',
-//   component: HomeComponent
-// },
-// {
-//   path:'personalInfo',
-//   component: PersonalinfoComponent,
-//   pathMatch: "full"
 
-
-// },
-// {
-//   path:'**',
-//   component: HomeComponent,
-
-// },
-// {
-//   path:'experience',
-//   component: ExperienceComponent,
-  
-// }
 ]
-
-// {
-//   path:'Home',
-//   component: HomeComponent
-// }]
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +23,8 @@ const routes: Routes = [
     PersonalinfoComponent,
     ExperienceComponent,
     EducationComponent,
-    FinalComponent
+    FinalComponent,
+    AdditionalComponent,
   ],
   imports: [
     BrowserModule,

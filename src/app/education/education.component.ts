@@ -11,5 +11,17 @@ export class EducationComponent {
   qualityOfEdu: any = "";
   endDate: any = "";
   textArea:any = "";
+  value: string = "";
+
+  eduQuality = '';
+	onSelected(value:string): void {
+		this.eduQuality = value;
+	}
+
+  isAdditional: boolean = false;
+
+  showAdditional() {
+    this.isAdditional = !this.isAdditional;
+  }
 
 }

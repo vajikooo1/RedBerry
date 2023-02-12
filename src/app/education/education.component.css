@@ -162,8 +162,7 @@
         flex-grow: 0;
     }
 
-
-    .educationQuality {
+    .col { 
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -171,14 +170,13 @@
         gap: 8px;
         
         position: absolute;
-        width: 419px;
+        width: 219px;
         height: 125px;
         left: calc(50% - 419px/2 - 624.5px);
         top: 294px;
-        
     }
 
-    .educationQuality label {
+    .colLabel { 
         width: 371px;
         height: 21px;
         
@@ -187,23 +185,15 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
-        /* identical to box height, or 131% */
+      
         
         display: flex;
         align-items: center;
         
         color: #000000;
-        
-        
-        /* Inside auto layout */
-        
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
     }
 
-    .educationQuality input { 
+    .select {
         box-sizing: border-box;
 
         width: 371px;
@@ -214,20 +204,12 @@
         border-radius: 4px;
         padding-left: 16px;
         
-        /* Inside auto layout */
-        
         flex: none;
         order: 1;
         align-self: stretch;
         flex-grow: 0;
     }
 
-    .dropdownVector {
-        position: absolute;
-        margin-top: 50px;
-        margin-left: 340px;
-        
-    }
 
     .endDate {
         display: flex;
@@ -579,6 +561,43 @@
         color: #000000;
     }
 
+    .eduQualiValue {
+        position: absolute;
+        width: 81px;
+        height: 20px;
+        left: 445px;
+        top: 625px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        
+        
+        /* off black */
+        
+        color: #1A1A1A;
+        
+    }
+
+    .endDate11 {
+        position: absolute;
+        width: 84px;
+        height: 19px;
+        left: 80px;
+        top: 652px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        
+        color: #919191;
+        
+    }
 
 
 

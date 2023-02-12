@@ -11,10 +11,13 @@
   <div class="inputsContainer">
 
       <div class="experience">
+
           <label for="text">გამოცდილება</label>
-          <input type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." [(ngModel)]="experience">
+          <input  type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." name="experience"  [class.invalid]="name.invalid && (name.dirty || name.touched)|| name.value?.length < 2" [(ngModel)]="experience" #name="ngModel" required>
+         <span *ngIf="name?.invalid && (name?.dirty || name?.touched)|| name?.value?.length < 2 || !name?.value?.endsWith('@redberry.ge')|| !name?.value?.startsWith('+995') "  >sasda</span>
           <p>მინიმუმ 2 სიმბოლო</p>
-      </div>   
+      
+        </div>   
 
       <div class="employer">
           <label for="text">დამსაქმებელი</label>
@@ -38,31 +41,33 @@
   </div>
 
      <div class="borderLine"></div>
-    
    </div>
-   <button class="expAdd"><span class="expAddSpan">მეტი გამოცდილების დამატება</span></button>
+
+   <app-additional *ngIf="isAdditional" [additionalInfo]="'experience'"></app-additional>
+
+
+   <button [style.marginTop]="isAdditional? '630px': '' " (click)="showAdditional()" class="expAdd"><span class="expAddSpan">მეტი გამოცდილების დამატება</span></button>
+
 
    <button routerLink="/personalInfo" class="prevBtn"><span class="prevBtnspan"> უკან </span></button>
    <button routerLink="/education" class="nextBtn"><span class="nextBtnspan"> შემდეგი </span></button>
 
    <!-----------        CV    --------------->
+   
    <div class="blank">
+
+
+
          
        <img class="logoImg" src="assets/2.png" alt="#">
        <p class="expCv">{{experience}}</p>
        <p class="empCv">{{employer}}</p>
-       <p class="startDateCv">{{startDate}}-{{endDate}}</p>
+       <p class="startDateCv">{{startDate}}{{endDate}}</p>
        <p class="txtAreaCv">{{txtArea}}</p>
 
 
 
-
-
-
    </div>
-
-   <!-----------        CV    --------------->
-
-
-
 </div>
+
+<p style="margin-top: 100px; background-color: red;">{{getUserName}}</p>

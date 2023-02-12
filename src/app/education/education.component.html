@@ -13,13 +13,21 @@
             <input type="text" placeholder="სასწავლებელი" [(ngModel)]="school">
             <p>მინიმუმ 2 სიმბოლო</p>
         </div>  
-
-        <div class="educationQuality">
-            <label for="text">ხარისხი</label>
-            <input type="text" placeholder="აირჩიეთ ხარისხი" [(ngModel)]="qualityOfEdu">
-            <img class="dropdownVector" src="assets/vector2.png" alt="#">
-        </div>  
-
+        <div class="col">
+            <label class="colLabel" for="select">ხარისხი</label>
+            <select class="select" #eduQuality (change)="onSelected(eduQuality.value)" [(ngModel)]="value">
+                <option default>აირჩიე ხარისხი</option>
+                <option>საშუალო სკოლის დიპლომი</option>
+                <option>ზოგადსაგანმანათლებლო დიპლომი</option>
+                <option>ბაკალავრი</option>
+                <option>მაგისტრი</option>
+                <option>დოქტორი</option>
+                <option>ასოცირებული ხარისხი</option>
+                <option>სტუდენტი</option>
+                <option>კოლეჯი(ხარისხის გარეშე)</option>
+                <option>სხვა</option>
+            </select>
+        </div>
 
         <div class="endDate">
             <label for="date">დამთავრების რიცხვი</label>
@@ -35,7 +43,9 @@
 </div>
     <div class="borderLine"></div>
 
-    <button class="educAdd"><span class="educAddSpan">სხვა სასწავლებლის დამატება</span></button>
+    <app-additional *ngIf="isAdditional" [additionalInfo]="'education'" ></app-additional>
+
+    <button (click)="showAdditional()" class="educAdd"><span class="educAddSpan">სხვა სასწავლებლის დამატება</span></button>
 
     <button routerLink="/experience" class="prevBtn"><span class="prevBtnspan"> უკან </span></button>
     <button routerLink="/final" class="fnshBtn"><span class="fnshBtnspan"> დასრულება </span></button>
@@ -45,8 +55,9 @@
 
         <p class="school">{{school}}</p>
         <p class="qualityOfEdu">{{qualityOfEdu}}</p>
-        <p class="endDate2">{{endDate}}</p>
+        <p class="endDate11">{{endDate}}</p>
         <p class="textArea">{{textArea}}</p>
+        <p class="eduQualiValue">{{value}}</p>
 
 
 

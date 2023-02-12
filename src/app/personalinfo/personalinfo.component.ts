@@ -10,7 +10,7 @@ export class PersonalinfoComponent {
   lastName: string = "";
   Textarea: string = "";
   userImage: any;
-  email: string = "";
+  email: any = "";
   phonenumber: number | undefined;
   
   handleUpload(event: any) {
@@ -23,6 +23,10 @@ export class PersonalinfoComponent {
       }
         
     };
+}
+
+saveData() {
+  localStorage.setItem('personalinfo', this.userName)
 }
 
 
