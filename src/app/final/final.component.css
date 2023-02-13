@@ -115,6 +115,24 @@ line-height: 21px;
 color: #1A1A1A;
 }
 
+.getphonenumber {
+    position: absolute;
+    width: 151px;
+    height: 21px;
+    left: 111px;
+    top: 158px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
+
 .userImage {
      position: absolute;
 width: 246px;

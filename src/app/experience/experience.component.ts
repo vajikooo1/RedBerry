@@ -23,6 +23,7 @@ export class ExperienceComponent implements OnInit {
   isAdditional: boolean = false;
 
   ngOnInit() {
+    
     this.getUserName = localStorage.getItem('personalinfo1');
     this.getlastName = localStorage.getItem('personalinfo2');
     this.getTextarea = localStorage.getItem('personalinfo3');

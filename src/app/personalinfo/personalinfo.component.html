@@ -53,7 +53,7 @@
 
         <div class="mobileNumb">
             <label for="phoneNumber">მობილურის ნომერი</label>
-            <input type="phoneNumber" placeholder="+995 551 12 34 56" [class.invalid]="Geonumber?.invalid && (Geonumber.dirty || Geonumber?.touched) || Geonumber?.value.length < 2" [(ngModel)]="phonenumber" #Geonumber="ngModel" required>
+            <input type="phoneNumber" placeholder="+995 551 12 34 56" [class.invalid]="Geonumber?.invalid && (Geonumber.dirty || Geonumber?.touched) || Geonumber?.value?.length < 2" [(ngModel)]="phonenumber" #Geonumber="ngModel" required>
             <span class="GeonumberSpan"  *ngIf="Geonumber?.invalid && (Geonumber?.dirty || Geonumber?.touched)|| Geonumber?.value?.length < 2 || !Geonumber?.value?.startsWith('+995')" >123</span>
             <p>უნდა აკმაყოფილებდეს ქართული მობილური ნომრის ფორმატს</p>
         </div>
@@ -67,22 +67,12 @@
     
     
     <p class="name">{{userName}}</p>
-    
-  
     <p class="lastname">{{lastName}}</p>
-
     <p class="email">{{email}}</p>
-
     <p class="number">{{phonenumber}}</p>
-   
-    
     <h5 class="textarea">{{Textarea}}</h5>
    
-   
     <img class="userImage" [src]="userImage" alt="#">
-
-    <div *ngIf="line1 == true" class="bottomLine"></div>
-
 
 
 </div>

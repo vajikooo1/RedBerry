@@ -755,6 +755,23 @@
     
     color: #1A1A1A;
 }
+.getphonenumber {
+    position: absolute;
+    width: 151px;
+    height: 21px;
+    left: 111px;
+    top: 158px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    /* off black */
+    
+    color: #1A1A1A;
+}
 
 .userImage {
     position: absolute;
@@ -764,4 +781,14 @@
     top: 48px;
 
     border-radius: 133px;
+}
+
+.bottomLine {
+    position: absolute;
+    width: 662px;
+    height: 0px;
+    right: 80px;
+    top: 341px;
+    
+    border: 1px solid #C8C8C8;
 }
