@@ -45,19 +45,33 @@
 
     <app-additional *ngIf="isAdditional" [additionalInfo]="'education'" ></app-additional>
 
-    <button (click)="showAdditional()" class="educAdd"><span class="educAddSpan">სხვა სასწავლებლის დამატება</span></button>
+    <button  [style.marginTop]="isAdditional? '490px': '' " (click)="showAdditional()" class="educAdd"><span class="educAddSpan">სხვა სასწავლებლის დამატება</span></button>
 
     <button routerLink="/experience" class="prevBtn"><span class="prevBtnspan"> უკან </span></button>
-    <button routerLink="/final" class="fnshBtn"><span class="fnshBtnspan"> დასრულება </span></button>
+    <button (click)="saveData()"  routerLink="/final" class="fnshBtn"><span class="fnshBtnspan"> დასრულება </span></button>
 
     <div class="blank">
-        <img class="logoImg" src="assets/2.png" alt="#">
+        <img class="logoImg" src="assets/2.png" alt="#">\
+
+        <p class="getusername" >{{getUserName}}</p>
+        <p class="getlastname">{{getlastName}}</p>
+        <p class="gettextarea">{{getTextarea}}</p>
+        <p class="getemail">{{getEmail}}</p>
+        <img class="userImage" [src]="getuserImage" alt="#">
+
+
+        <p class="expCv">{{getExperience}}</p>
+        <p class="empCv">{{getEmployer}}</p>
+        <p class="startDateCv">{{getStartDate}}{{getEndDate}}</p>
+        <p class="txtAreaCv">{{getTxtArea}}</p>
+
 
         <p class="school">{{school}}</p>
         <p class="qualityOfEdu">{{qualityOfEdu}}</p>
         <p class="endDate11">{{endDate}}</p>
         <p class="textArea">{{textArea}}</p>
         <p class="eduQualiValue">{{value}}</p>
+
 
 
 

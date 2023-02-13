@@ -9,7 +9,8 @@
 
             <div class="nameInput1">
                  <label for="nameInput">სახელი</label>
-                 <input class="nameInput" type="name" placeholder="ანზორ" [(ngModel)]="userName">
+                 <input class="nameInput" type="name" placeholder="ანზორ" [(ngModel)]="userName" name="experience"  [class.invalid]="name.invalid && (name.dirty || name.touched)|| name.value?.length < 2"   #name="ngModel" required>
+                 <span class="namespan" *ngIf="name?.invalid && (name?.dirty || name?.touched)|| name?.value?.length < 2">!</span>
                  <p>მინიმუმ 2 ასო, ქართული ასოები</p>
                  
                 </div>
@@ -17,7 +18,10 @@
 
             <div class="lastnameInp">
                  <label for="lastnameInput">გვარი</label>
-                 <input class="lastnameInput" type="lastname" placeholder="მუმლაძე" [(ngModel)]="lastName">
+                 <input class="lastnameInput" type="lastname" placeholder="მუმლაძე" [class.invalid]="lastname1?.invalid && (lastname1?.dirty || lastname1?.touched)|| lastname1?.value?.length < 2"  [(ngModel)]="lastName" #lastname1="ngModel" required>
+                
+                 <span class="lastname1Span" *ngIf="lastname1?.invalid && (lastname1?.dirty || lastname1?.touched)|| lastname1?.value?.length < 2" >!</span>
+                
                  <p>მინიმუმ 2 ასო, ქართული ასოები</p>
             </div>
 
@@ -25,8 +29,10 @@
          <div class="uploadimg">
             <h2 class="persImgUpl"> პირადი ფოტოს ატვირთვა</h2>
           
-            <!-- <label for="imgUpload"> ატვირთვა </label> -->
-            <input class="imgUpload" (change)="handleUpload($event)" type="file" name="image" id="#">
+            <label for="imgUpload" class="custom-file-upload submit-btn"> ატვირთვა 
+                <input id="imgUpload" class="submit-btn" (change)="handleUpload($event)" type="file" name="image">
+         </label> 
+            
         
             <!-- <button class="imgUpload"><span class="persImgTxt"> ატვირთვა </span></button> -->
        
@@ -40,13 +46,15 @@
           
         <div class="mailInp">
             <label for="email">ელ.ფოსტა</label>
-            <input class="emailinp" type="email" placeholder="anzorr666@redberry.ge"  [(ngModel)]="email">
+            <input class="emailinp" type="email" placeholder="anzorr666@redberry.ge" [class.invalid]="redberrymail?.invalid && (redberrymail?.dirty || redberrymail?.touched)|| redberrymail?.value?.length < 2" [(ngModel)]="email" #redberrymail="ngModel" required >
+            <span class="mailinpSpan" *ngIf="redberrymail?.invalid && (redberrymail?.dirty || redberrymail?.touched)|| redberrymail?.value?.length < 2 || !redberrymail?.value?.endsWith('@redberry.ge')">!</span>
             <p>უნდა მთავრდებოდეს @redberry.ge-თი</p>
         </div>   
 
         <div class="mobileNumb">
             <label for="phoneNumber">მობილურის ნომერი</label>
-            <input type="phoneNumber" placeholder="+995 551 12 34 56" [(ngModel)]="phonenumber">
+            <input type="phoneNumber" placeholder="+995 551 12 34 56" [class.invalid]="Geonumber?.invalid && (Geonumber.dirty || Geonumber?.touched) || Geonumber?.value.length < 2" [(ngModel)]="phonenumber" #Geonumber="ngModel" required>
+            <span class="GeonumberSpan"  *ngIf="Geonumber?.invalid && (Geonumber?.dirty || Geonumber?.touched)|| Geonumber?.value?.length < 2 || !Geonumber?.value?.startsWith('+995')" >123</span>
             <p>უნდა აკმაყოფილებდეს ქართული მობილური ნომრის ფორმატს</p>
         </div>
 
@@ -59,7 +67,7 @@
     
     
     <p class="name">{{userName}}</p>
-  
+    
   
     <p class="lastname">{{lastName}}</p>
 
@@ -72,6 +80,8 @@
    
    
     <img class="userImage" [src]="userImage" alt="#">
+
+    <div *ngIf="line1 == true" class="bottomLine"></div>
 
 
 

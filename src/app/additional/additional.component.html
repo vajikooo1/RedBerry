@@ -1,38 +1,44 @@
 <ng-container *ngIf="additionalInfo === 'experience'">
 
-    <div  class="inputsContainer1">
+    <div class="inputsContainer">
 
-    <div class="experience">
-        <label for="text">გამოცდილება</label>
-        <input type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." [(ngModel)]="experience">
-        <p>მინიმუმ 2 სიმბოლო</p>
-    </div>   
-
-    <div class="employer">
-        <label for="text">დამსაქმებელი</label>
-        <input type="text" placeholder="დამსაქმებელი" [(ngModel)]="employer">
-        <p>მინიმუმ 2 სიმბოლო</p>
-    </div>   
-
-    <div class="startDate">
-        <label for="date">დაწყების რიცხვი</label>
-        <input type="date" placeholder="mm/dd/yy" [(ngModel)]="startDate">
+        <div class="experience">
+  
+          <!-- !name?.value?.endsWith('@redberry.ge')|| !name?.value?.startsWith('+995')  -->
+  
+            <label for="text">გამოცდილება</label>
+            <input  type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." name="experience"  [class.invalid]="name.invalid && (name.dirty || name.touched)|| name.value?.length < 2" [(ngModel)]="experience" #name="ngModel" required>
+           <span [style.margin-left]="'810px'" *ngIf="name?.invalid && (name?.dirty || name?.touched)|| name?.value?.length < 2">!</span>
+            <p>მინიმუმ 2 სიმბოლო</p>
+        
+          </div>   
+  
+        <div class="employer">
+            <label for="text">დამსაქმებელი</label>
+            <input  type="text" placeholder="დამსაქმებელი" name="employer" [class.invalid]="employerVali.invalid && (employerVali.dirty || employerVali.touched)|| employerVali.value?.length < 2" [(ngModel)]="employer" #employerVali="ngModel" required>
+            <span [style.margin-left]="'810px'" *ngIf="employerVali?.invalid && (employerVali?.dirty || employerVali?.touched)|| employerVali?.value?.length < 2">!</span>
+            <p>მინიმუმ 2 სიმბოლო</p>
+        </div>   
+  
+        <div class="startDate">
+            <label for="date">დაწყების რიცხვი</label>
+            <input type="date" placeholder="mm/dd/yy" [class.invalid]="startDateVali.invalid && (startDateVali.dirty || startDateVali.touched)" [(ngModel)]="startDate" #startDateVali="ngModel" required>
+        </div>
+  
+        <div class="endDate">
+            <label for="date">დამთავრების რიცხვი</label>
+            <input type="date" placeholder="mm/dd/yy" [class.invalid]="endDateVali.invalid && (endDateVali.dirty || endDateVali.touched)" [(ngModel)]="endDate" #endDateVali="ngModel" required>
+        </div>
+  
+        <div class="txtarea">
+            <label for="info">აღწერა</label>
+            <textarea class="txtarea2" name="info" id="#" cols="105" rows="6" placeholder="როლი თანამდებობაზე დაზოგადი აღწერა" [(ngModel)]="txtArea"></textarea>
     </div>
-
-    <div class="endDate">
-        <label for="date">დამთავრების რიცხვი</label>
-        <input type="date" placeholder="mm/dd/yy" [(ngModel)]="endDate">
-    </div>
-
-    <div class="txtarea">
-        <label for="info">აღწერა</label>
-        <textarea class="txtarea2" name="info" id="#" cols="105" rows="6" placeholder="როლი თანამდებობაზე დაზოგადი აღწერა" [(ngModel)]="txtArea"></textarea>
-</div>
+  
 
    <div class="borderLine"></div>
  </div>
 
- <button class="expAdd"><span class="expAddSpan">მეტი გამოცდილების დამატება</span></button>
 
 </ng-container>
 
@@ -51,7 +57,7 @@
  <ng-container *ngIf="additionalInfo === 'education'">
 
 
-    <div class="inputsContainer">
+    <div class="inputsContainerEdu">
 
     <div class="education">
         <label for="text">სასწავლებელი</label>
@@ -74,19 +80,19 @@
         </select>
     </div>
 
-    <div class="endDate">
+    <div class="endDateEdu">
         <label for="date">დამთავრების რიცხვი</label>
         <input type="date" placeholder="mm/dd/yy" [(ngModel)]="endDate2">
     </div>
 
 
-    <div class="txtarea">
+    <div class="txtareaEdu">
         <label for="info">აღწერა</label>
         <textarea name="info" id="#" cols="105" rows="6" placeholder="როლი თანამდებობაზე დაზოგადი აღწერა" [(ngModel)]="textArea"></textarea>
 </div>
 
 </div>
-<div class="borderLine"></div>
+<div class="borderLineEdu"></div>
 
 </ng-container>
 

@@ -599,6 +599,169 @@
         
     }
 
+    .getusername{
+        position: absolute;
+        width: 123px;
+        height: 42px;
+        left: 80px;
+        top: 68px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 42px;
+        
+        
+        color: #F93B1D;
+    }
+    
+    .getlastname {
+        position: absolute;
+        width: 145px;
+        height: 42px;
+        left: 223px;
+        top: 68px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 42px;
+        /* identical to box height */
+        
+        
+        color: #F93B1D;
+    }
+    
+    .gettextarea {
+        box-sizing: border-box;
+        word-wrap: break-word;
+      
+        position: absolute;
+        width: 432px;
+        height: 72px;
+        left: 80px;
+        top: 250px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+        
+        text-transform: lowercase;
+        
+        color: #000000;
+    }
+    
+    .getemail { 
+        position: absolute;
+        width: 179px;
+        height: 21px;
+        left: 111px;
+        top: 127px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        
+        /* off black */
+        
+        color: #1A1A1A;
+    }
+    
+    .userImage {
+        position: absolute;
+        width: 246px;
+        height: 246px;
+        left: 501px;
+        top: 48px;
+    
+        border-radius: 133px;
+    }
+
+    .expCv {
+        position: absolute;
+        width: 178px;
+        height: 20px;
+        left: 80px;
+        top: 402px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        
+        
+        /* off black */
+        
+        color: #1A1A1A;
+    }
+
+    .empCv {
+        position: absolute;
+        width: 70px;
+        height: 20px;
+        left: 265px;
+        top: 402px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        
+        
+        /* off black */
+        
+        color: #1A1A1A;
+    }
+
+    .startDateCv {
+        position: absolute;
+        width: 183px;
+        height: 19px;
+        left: 80px;
+        top: 429px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        
+        color: #919191;
+    }
+
+    .txtAreaCv { 
+        box-sizing: border-box;
+        word-wrap: break-word;
+         
+        position: absolute;
+        width: 662px;
+        height: 66px;
+        left: 80px;
+        top: 464px;
+        
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+        
+        text-transform: capitalize;
+        
+        color: #000000;
+    }
+
 
 
 

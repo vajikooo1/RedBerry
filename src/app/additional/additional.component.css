@@ -1,7 +1,4 @@
 
-.inputsContainer1 {
-    margin-top: -900px;
-}
 
 .experience { 
     display: flex;
@@ -360,43 +357,265 @@
     
     border: 1px solid #C1C1C1;
 }
+/* ------------------    education ------------------------- */
 
-.expAdd {
+.education { 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 60px;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
     
     position: absolute;
-    width: 289px;
-    height: 48px;
-    left: calc(50% - 289px/2 - 664.5px);
-    top: 1435px;
-    
-    background: #62A1EB;
-    border-radius: 4px;
+    width: 846px;
+    height: 125px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 708px;
 }
 
-.expAddSpan {
-    width: 247px;
-    height: 20px;
+.education label {
+    width: 798px;
+    height: 21px;
     
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
-    margin-left: -36px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
     
+    display: flex;
+    align-items: center;
     
-    color: #FFFFFF;
+    color: #000000;
     
     
     /* Inside auto layout */
     
     flex: none;
     order: 0;
+    align-self: stretch;
     flex-grow: 0;
+}
+
+.education input {
+    box-sizing: border-box;
+    padding: 16px 13px;
+
+    width: 798px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.education p {
+    width: 798px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* შავი/500 */
+    
+    color: #2E2E2E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.col { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 125px;
+    left: calc(50% - 419px/2 - 624.5px);
+    top: 845px;
+}
+
+.colLabel { 
+    width: 371px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+}
+
+.select {
+    box-sizing: border-box;
+
+    width: 371px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    padding-left: 16px;
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.endDateEdu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 419px;
+    height: 93px;
+    left: calc(50% - 419px/2 - 197.5px);
+    top: 845px;
+}
+
+.endDateEdu label {
+    width: 371px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.endDateEdu input {
+    box-sizing: border-box;
+
+    width: 371px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.txtareaEdu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 224px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 956px;
+    
+}
+
+.txtareaEdu label {
+    width: 798px;
+    height: 21px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.txtareaEdu textarea {
+    width: 798px;
+    height: 179px;
+
+    padding: 16px 13px;
+    
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+
+
+.borderLine {
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 151px;
+    top: 1390px;
+    
+    border: 1px solid #C1C1C1;
 }
